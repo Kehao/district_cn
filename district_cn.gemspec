@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = DistrictCn::VERSION
   spec.authors       = ["kehao"]
   spec.email         = ["kehao.qiu@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{地区码查询}
+  spec.summary       = %q{地区码查询}
+#  spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
