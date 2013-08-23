@@ -72,7 +72,7 @@ codes.first.name
 DistrictCn.tree #树状结构数据
 DistrictCn.list #数据列表
 ```
-## 使用act_as_area_field 简化调用
+## 使用act_as_area_field 简化调用(ActiveRecord适用)
 ```ruby
 #company.rb
 class Company < ActiveRecord::Base
