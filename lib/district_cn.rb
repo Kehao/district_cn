@@ -7,6 +7,14 @@ module DistrictCn
   autoload :Code,      'district_cn/code'
   autoload :Db,        'district_cn/db'
 
+  begin
+    if defined?(ActiveRecord)
+      autoload :ActAsAreaField,'district_cn/act_as_area_field'
+      ActiveRecord::Base.extend(ActAsAreaField::ActiveRecord)
+    end
+  rescue 
+  end
+
   class << self
 
     def code(id)
