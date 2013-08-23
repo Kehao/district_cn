@@ -72,7 +72,8 @@ codes.first.name
 DistrictCn.tree #树状结构数据
 DistrictCn.list #数据列表
 ```
-## test
+
+## Test
 ```ruby
 rake spec
 ```
