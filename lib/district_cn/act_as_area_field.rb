@@ -3,6 +3,8 @@ module DistrictCn
     module ActiveRecord
 
       def act_as_area_field(*attributes)
+        define_attribute_methods unless attribute_methods_generated?
+
         attributes.each do |attribute|
           class_eval <<-EVAL
               alias_method :_#{attribute}, :#{attribute}

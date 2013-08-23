@@ -9,16 +9,17 @@ end
 ActiveRecord::Base.connection.instance_eval do
   create_table :companies do |t|
     t.string :name
+    t.string :loc_code
+    t.string :another_code
     t.timestamps
   end
 end
 
 class Company < ActiveRecord::Base
   attr_accessor :region_code
-  attr_accessor :loc_code
   attr_accessible :region_code
 
-  act_as_area_field :region_code
+  act_as_area_field :region_code,:loc_code
   validates :region_code, presence: true
 end
 
@@ -38,6 +39,12 @@ describe DistrictCn::ActAsAreaField do
     expect(subject.region_code).to be_instance_of(DistrictCn::Code)
   end
 
+  it "should return DistrictCn::Code instance" do
+    subject.loc_code = 331002
+    expect(subject.loc_code).to be_instance_of(DistrictCn::Code)
+  end
+
+
   it "should cached" do
     subject.region_code = 331002
     expect(subject.region_code.object_id).to eq(subject.region_code.object_id)
@@ -52,9 +59,9 @@ describe DistrictCn::ActAsAreaField do
   end
 
   it "should return real value without acts_as_area_field" do
-    subject.loc_code = 331002
-    expect(subject.loc_code).to eq(331002)
-    expect(subject.loc_code).not_to be_instance_of(DistrictCn::Code)
+    subject.another_code = 331002
+    expect(subject.another_code).to eq(331002)
+    expect(subject.another_code).not_to be_instance_of(DistrictCn::Code)
   end
 
   it "should be unvalid when region_code is blank" do
