@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/district_cn.png)](http://badge.fury.io/rb/district_cn)
+[![Gem Version](https://badge.fury.io/rb/district_cn.png)](http://badge.fury.io/rb/district_cn) [![Build Status](https://travis-ci.org/Kehao/district_cn.png?branch=master)](https://travis-ci.org/Kehao/district_cn)
 # DistrictCn
 
 地区码查询
