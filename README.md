@@ -1,6 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/district_cn.png)](http://badge.fury.io/rb/district_cn) 
 [![Build Status](https://travis-ci.org/Kehao/district_cn.png?branch=master)](https://travis-ci.org/Kehao/district_cn)
 [![Dependency Status](https://gemnasium.com/Kehao/district_cn.png)](https://gemnasium.com/Kehao/district_cn)
+[![Coverage Status](https://coveralls.io/repos/Kehao/district_cn/badge.png?branch=master)](https://coveralls.io/r/Kehao/district_cn?branch=master)
 # DistrictCn
 
 地区码查询
