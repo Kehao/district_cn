@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/area_cn.png)](http://badge.fury.io/rb/area_cn)
+[![Gem Version](https://badge.fury.io/rb/area_cn.png)](http://badge.fury.io/rb/district_cn)
 # DistrictCn
 
 地区码查询
