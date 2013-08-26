@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/repos/5217cf9656b1026a6004dbc5/badges/e15e78fdd64f5d9ea62c/gpa.png)](https://codeclimate.com/repos/5217cf9656b1026a6004dbc5/feed)
 # DistrictCn
 
-地区码查询
+ 地区码查询
 
 ## Installation
 
