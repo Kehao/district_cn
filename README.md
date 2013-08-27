@@ -26,7 +26,8 @@ Or install it yourself as:
 
 ```ruby
 # new
-DistrictCn.code(331002) # or DistrictCn::Code.new(331002)
+DistrictCn.code(331002) 
+# or DistrictCn::Code.new(331002)
 
 # Instance methods 
 code = DistrictCn.code(331000)
