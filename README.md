@@ -64,7 +64,7 @@ code.children
 #   ["仙居县", "331024"],
 #   ["玉环县", "331021"]]
 
-id.as_options
+code.as_options
 # => 返回生成select需要的数据
 ```
 ### DistrictCn
