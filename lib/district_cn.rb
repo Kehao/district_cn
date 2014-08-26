@@ -24,6 +24,8 @@ module DistrictCn
 
     def search(text,limit=10)
       results = []
+      return results if text.empty?
+      
       list.each do |id,name|
         break if results.size.eql?(limit)
 
